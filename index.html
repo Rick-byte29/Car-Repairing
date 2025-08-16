@@ -123,8 +123,19 @@
 
     .card img {
       width: 100%;
+      height: auto;
       border-radius: 10px;
       margin-bottom: 15px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
     }
 
     .card h3 { color: #ffcc00; margin-bottom: 10px; }
@@ -192,7 +203,6 @@
       <a href="#consult" class="cta-btn">Book Now</a>
     </div>
   </section>
-
   <section>
     <h2>Meet Our Experts</h2>
     <div class="experts">
@@ -239,7 +249,7 @@
     <p>© 2025 Torque Masters. All rights reserved.</p>
   </footer>
 
-  <script>
+ <script>
     // Scroll animation trigger
     const scrollElems = document.querySelectorAll('.scroll-anim');
     window.addEventListener('scroll', () => {
